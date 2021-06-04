@@ -1,4 +1,4 @@
-build-app-protect-container/nginx-repo.crt
-build-app-protect-container/nginx-repo.key
-build-nplus-container/nginx-repo.crt
-build-nplus-container/nginx-repo.key
+app-protect-container/nginx-repo.crt
+app-protect-container/nginx-repo.key
+nplus-container/nginx-repo.crt
+nplus-container/nginx-repo.key
