@@ -3,7 +3,7 @@
         "request_type": "all"
     },
     "content": {
-        "format": "splunk",
+        "format": "default",
         "max_request_size": "any",
         "max_message_size": "10k"
     }
