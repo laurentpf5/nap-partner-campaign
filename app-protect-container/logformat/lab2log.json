@@ -4,7 +4,7 @@
     },
     "content": {
         "format": "user-defined",
-        "format_string": "NAP support ID: %app_protect_support_id% - NAP outcome: %app_protect_outcome% - NAP reason: %app_protect_outcome_reason% - NAP policy name: %app_protect_policy_name% - NAP version: %app_protect_version% NGINX request: %request% NGINX status: %status%", 
+        "format_string": "NAP support ID: %support_id% - NAP Violation: %violations% - NAP outcome: %outcome% - NAP reason: %outcome_reason% - NAP policy name: %policy_name% - NAP Rating: %violation_rating% - NAP version: %version% NGINX request: %request% NGINX status: %request_status%", 
         "max_request_size": "any",
         "max_message_size": "10k"
     }
