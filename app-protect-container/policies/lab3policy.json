@@ -1,26 +1,9 @@
 {
     "policy":
     {
-        "name": "policy-viol_filetype",
+        "name": "policy-filetype",
         "template": { "name": "POLICY_TEMPLATE_NGINX_BASE" },
         "applicationLanguage": "utf-8",
-        "enforcementMode": "blocking",
-        "blocking-settings":
-        {
-            "violations":[
-                {
-                    "name": "VIOL_FILETYPE",
-                    "alarm": true,
-                    "block": true
-                }
-            ]
-        },
-        "filetypes": [
-            {
-                "name": "jpg",
-                "type": "explicit",
-                "allowed": false
-            }
-        ]
+        "enforcementMode": "blocking"
+     }
     }
-}

@@ -1,25 +1,15 @@
 {
     "policy":
     {
-        "name": "policy-viol_filetype",
+        "name": "policy-signature",
         "template": { "name": "POLICY_TEMPLATE_NGINX_BASE" },
         "applicationLanguage": "utf-8",
         "enforcementMode": "blocking",
-        "blocking-settings":
-        {
-            "violations":[
-                {
-                    "name": "VIOL_FILETYPE",
-                    "alarm": true,
-                    "block": true
-                }
-            ]
-        },
-        "filetypes": [
+        "signature-sets": [
             {
-                "name": "jpg",
-                "type": "explicit",
-                "allowed": false
+                "name": "All sigantures",
+                "alarm": true,
+                "block": true
             }
         ]
     }
