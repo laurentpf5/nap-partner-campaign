@@ -1,0 +1,12 @@
+{
+    "filter": {
+        "request_type": "illegal"
+    },
+    "content": {
+        "format": "user-defined",
+        "format_string": "NAP support ID: %app_protect_support_id% - NAP outcome: %app_protect_outcome% - NAP reason: %app_protect_outcome_reason% - NAP policy name: %app_protect_policy_name% - NAP version: %app_protect_version% NGINX request: %request% NGINX status: %status%", 
+        "max_request_size": "any",
+        "max_message_size": "10k"
+    }
+}
+
