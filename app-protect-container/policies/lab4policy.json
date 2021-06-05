@@ -1,26 +1,27 @@
 {
-    "policy":
-    {
-        "name": "policy-viol_filetype",
-        "template": { "name": "POLICY_TEMPLATE_NGINX_BASE" },
-        "applicationLanguage": "utf-8",
-        "enforcementMode": "blocking",
-        "blocking-settings":
-        {
-            "violations":[
-                {
-                    "name": "VIOL_FILETYPE",
+    "name": "policy-dataguard",
+    "template": { "name": "POLICY_TEMPLATE_NGINX_BASE" },
+    "applicationLanguage": "utf-8",
+    "enforcementMode": "blocking",
+  "blocking-settings": {
+                "violations": [
+                    {
+                    "name": "VIOL_DATA_GUARD",
                     "alarm": true,
-                    "block": true
-                }
+                    "block": false
+              }
             ]
-        },
-        "filetypes": [
-            {
-                "name": "jpg",
-                "type": "explicit",
-                "allowed": false
+          },
+          "data-guard": {
+                "enabled": false,
+                "maskData": true,
+                "creditCardNumbers": true,
+                "usSocialSecurityNumbers": true,
+                "enforcementMode": "ignore-urls-in-list",
+                "enforcementUrls": [],
+                "lastCcnDigitsToExpose": 4,
+                "lastSsnDigitsToExpose": 4
             }
-        ]
-    }
-}
+  }
+  
+  

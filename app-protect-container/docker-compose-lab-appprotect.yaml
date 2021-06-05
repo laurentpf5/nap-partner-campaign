@@ -10,7 +10,7 @@ services:
         hostname: app2
         ports:
         - "8082:80"
-    nginx:
+    approtect:
         image: app-protect:latest
         volumes:
             - ./custom_log_format.json:/etc/nginx/custom_log_format.json
