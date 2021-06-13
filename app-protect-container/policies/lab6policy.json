@@ -1,0 +1,14 @@
+{
+    "policy": {
+        "name": "policy_name",
+        "template": { "name": "POLICY_TEMPLATE_NGINX_BASE" },
+        "applicationLanguage": "utf-8",
+        "enforcementMode": "blocking",
+        "signature-settings": {
+            "minimumAccuracyForAutoAddedSignatures": "low"
+        },
+        "server-technologies": [
+            { "serverTechnologyName": "Apache/NCSA HTTP Server" }
+        ]
+    }
+}
