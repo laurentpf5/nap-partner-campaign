@@ -1,12 +1,13 @@
 #!/bin/bash
-curl -H "1.2.3.4" http://10.1.20.2
-curl http://10.1.20.2/%09
-curl http://10.1.20.2/index.bak
-curl http://10.1.20.2?a=%3Cscript%3E
-curl http://10.1.20.2
-curl http://10.1.20.2/\<script\>
-curl -H "Content-Length: -26" http://10.1.20.2/
-curl http://10.1.20.2/index.php
-curl http://10.1.20.2/test.exe
-curl http://10.1.20.2/index.html
-curl http://10.1.20.2/basic/index.php
+APPHOST=10.1.20.2
+curl -H "1.2.3.4" http://$APPHOST
+curl http://$APPHOST/%09
+curl http://$APPHOST/index.bak
+curl http://i$APPHOST?a=%3Cscript%3E
+curl http://$APPHOST
+curl http://$APPHOST/\<script\>
+curl -H "Content-Length: -26" http://$APPHOST/
+curl http://$APPHOST/index.php
+curl http://$APPHOST/test.exe
+curl http://$APPHOST/index.html
+curl http://$APPHOST/basic/index.php
