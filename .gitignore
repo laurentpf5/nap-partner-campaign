@@ -2,5 +2,5 @@ app-protect-container/nginx-repo.crt
 app-protect-container/nginx-repo.key
 nplus-container/nginx-repo.crt
 nplus-container/nginx-repo.key
-api-security-lab/nginx-repo.crit
+api-security-lab/nginx-repo.crt
 api-security-lab/nginx-repo.key
